@@ -28,7 +28,8 @@ export default function Task({task: {id, title, state}, onArchiveTask, onPinTask
                     value={title}
                     readOnly={true}
                     name="title"
-                    placeholder="Input Title"/>
+                    placeholder="Input Title"
+                    style={{background: "red"}}/>
             </label>
 
             {state !== "TASK_ARCHIVED" && (
